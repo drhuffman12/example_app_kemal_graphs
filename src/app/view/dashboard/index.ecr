@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Example App Kemal - Dashboard</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+    <!-- Load c3.css -->
+    <link href="/css/c3.min.css" rel="stylesheet">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="/js/d3.min.js" charset="utf-8"></script>
+    <script src="/js/c3.min.js"></script>
+
+    <!-- Load app css -->
+    <link href="/css/dashboard.css" rel="stylesheet">
+    <link href="/css/chart.css" rel="stylesheet">
+
+    <!-- Load app js -->
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/chart.js"></script>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input id='msg' placeholder='message...' />
+        <input type="submit" value="Send">
+      </form>
+
+      <div class='messages' id='messages_area'>
+        <button onclick='$("#messages").toggle();'>Messages:</button>
+        <pre id='messages' style='display: none;'></pre>
+      </div>
+
+      <div class='error_log' id='error_log_area'>
+        <button onclick='$("#error_log").toggle();'>Error Log:</button>
+        <pre id='error_log' style='display: none;'></pre>
+      </div>
+
+      <div class="chart_list_area">
+        <b>Charts:</b>
+        <div id='chart_list_area'>
+          <span class="clear"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

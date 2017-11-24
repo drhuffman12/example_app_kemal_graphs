@@ -1,0 +1,17 @@
+name: example_app_kemal_graphs
+version: 0.1.0
+
+authors:
+  - Daniel Huffman <drhuffman12@yahoo.com>
+
+targets:
+  example_app_kemal_graphs:
+    main: src/example_app_kemal_graphs.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+crystal: 0.23.1
+
+license: MIT

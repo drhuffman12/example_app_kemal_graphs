@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+crystal build --release --no-debug src/example_app_kemal_graphs.cr -o bin/app

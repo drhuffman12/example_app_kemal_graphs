@@ -1,0 +1,73 @@
+.note_updated_area {
+  -webkit-animation-name: demo;
+  -webkit-animation-duration: 900ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes demo {
+    0% {
+        background-color: yellow;
+        opacity:1;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+div.messages {
+  background-color: #aaaaff;
+  border: 0.1em solid blue;
+}
+div.messages b {
+  height: 1em;
+}
+div.messages pre {
+  background-color: #f0f0f0;
+  height: 12em;
+  overflow: scroll;
+}
+
+div.error_log {
+  background-color: #ffaaaa;
+  border: 0.1em solid blue;
+}
+div.error_log b {
+  height: 1em;
+}
+div.error_log pre {
+  background-color: #ffeeee;
+  height: 12em;
+  overflow: scroll;
+}
+
+div.chart_list_area {
+  background-color: #aaffaa;
+  border: 0.1em solid black;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+div.chart_list_area b {
+  height: 1em;
+}
+div.chart_list_area div#chart_list_area {
+  background-color: #aaaaaa;
+  border: 0.1em solid black;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+div.chart_list_area div#chart_list_area div.chart_area {
+  position: relative;
+  float: left;
+  background-color: #eeeeee;
+  border: 0.1em solid black;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+span.clear { clear: left; display: block; }
+
+.msg_from_server { border: 0.1em solid red; }

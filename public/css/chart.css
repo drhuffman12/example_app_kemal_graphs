@@ -1,0 +1,42 @@
+.chart_wrapper {
+  width: 1200;
+  float: left;
+  border: 0.1em solid #000000;
+  background: #ffffff;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+.chart_wrapper .title {
+  border: 0.1em solid #222222;
+  background: #dddddd;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+.chart_wrapper .comment {
+  border: 0.1em solid #111111;
+  background: #eeeeee;
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+.chart_wrapper .chart {
+  width: 93%;
+  margin: 0 auto;
+  border: 0.1em solid #000000;
+  background: #ffffff;
+  margin: 0.1em;
+  padding: 1em;
+}
+
+.chart_wrapper .chart .c3-xgrid-line line {
+  stroke: lightgray;
+  stroke-dasharray: 0.5em;
+}
+
+.chart_wrapper .chart .c3-ygrid-line line {
+  stroke: lightgray;
+  /* stroke-dashoffset: 100; */
+  stroke-dasharray: 1em;
+}
