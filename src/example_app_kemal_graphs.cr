@@ -108,7 +108,7 @@ spawn do
   while App::Dashboard::STATUS_HIST.last == "running" && ! App::Dashboard::MESSAGES.last(10).includes?("bot_sleep_mode")
     begin
       App::Dashboard::EXAMPLE_CHARTS.each do |chart|
-        next if rand < 0.75 # Since it's just a demo anyways, let's only update some of the graphs at random
+        next if rand < 0.25 # Since it's just a demo anyways, let's only update some of the graphs at random
 
         chart.append_demo_data
         msg = chart.to_page_command
