@@ -27,7 +27,15 @@ bin/build
 bin/app
 ```
 
-To adjust the update speed of the graphs, enter `bot_sleep_dur <delay>` in the message form. For example, `bot_sleep_dur 5` will trigger a 5 second delay and `bot_sleep_dur 0.5` will trigger a half-second delay. (Be careful; your browser will probably lock up if you set the value too low.)
+Then, browse to http://0.0.0.0:3000/ (redirects to http://0.0.0.0:3000/dashboard).
+
+To adjust the update speed of the graphs, type the following into the `message...` text box and click "Send":
+
+```
+bot_sleep_dur <delay>
+```
+
+For example, `bot_sleep_dur 5` will trigger a 5 second delay and `bot_sleep_dur 0.5` will trigger a half-second delay. (Be careful. How much data can your browser handle before locking up if you set the delay value too low?)
 
 ![example screenshot](doc/screenshots/browser_screenshot.png)
 

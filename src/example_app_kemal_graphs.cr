@@ -16,8 +16,8 @@ module App #  ExampleAppKemalGraphs
   end
 end
 
-get "/" do
-  "Hello World!"
+get "/" do |env|
+  env.redirect "/dashboard"
 end
 
 get "/dashboard" do
